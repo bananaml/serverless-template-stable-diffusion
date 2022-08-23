@@ -3,6 +3,8 @@
 
 This repo gives a basic framework for serving Stable Diffusion in production using simple HTTP servers.
 
+NOTE: the template requires you to configure your huggingface auth key into it before it works. Read "Move to prod" below for instructions.
+
 If you want to generalize this to deploy anything on Banana, [see the guide here](https://www.notion.so/banana-dev/How-To-Serve-Anything-On-Banana-125a65fc4d30496ba1408de1d64d052a).
 
 ## Quickstart:
