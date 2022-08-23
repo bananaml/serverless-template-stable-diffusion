@@ -35,8 +35,7 @@ If Banana is your favorite GPU hosting provider (and we sure hope it is), read o
 Three steps:
 1. Create your own copy of this template repo. Either:
 - Click "Fork" on this repo (creates a public repo)
-- Click "Use this Template" on this repo (creates a private or public repo)
-- Create your own repo and copy the template files into it
+- Create your own repo and copy the template files into it (to create a private repo)
 
 2. Install the [Banana Github App](https://github.com/apps/banana-serverless) to your new repo.
 
@@ -51,7 +50,7 @@ It'll then be deployed on our Serverless GPU cluster and callable with any of ou
 - [Node JS / Typescript](https://github.com/bananaml/banana-node-sdk)
 - [Go](https://github.com/bananaml/banana-go)
 
-You can monitor buildtime and runtime logs by clicking the logs button in the model view on the Banana Dashboard](https://app.banana.dev)
+You can monitor buildtime and runtime logs by clicking the logs button in the model view on the [Banana Dashboard](https://app.banana.dev)
 
 <br>
 
