@@ -29,4 +29,5 @@ ADD app.py .
 
 EXPOSE 8000
 
+ENV HF_AUTH_TOKEN=$HF_AUTH_TOKEN
 CMD python3 -u server.py
