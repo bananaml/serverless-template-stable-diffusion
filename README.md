@@ -9,14 +9,16 @@ If you want to generalize this to deploy anything on Banana, [see the guide here
 
 The repo is already set up to run [Stable Diffusion](https://huggingface.co/CompVis/stable-diffusion-v1-4) text-to-image model.
 1. Run `pip3 install -r requirements.txt` to download dependencies.
-2. Run `python3 server.py` to start the server.
-3. Run `python3 test.py` in a different terminal session to test against it.
+2. Set your Huggingface Auth Token as an environment variable `export HF_AUTH_TOKEN=your_auth_token`
+3. Run `python3 server.py` to start the server.
+4. Run `python3 test.py` in a different terminal session to test against it.
 
 ## Make it your own:
 
 1. Edit `app.py` to load and run your model.
 2. Make sure to test with `test.py`!
 3. When ready to deploy:
+  - add your HF_AUTH_TOKEN environment variable to the dockerfile, or [contact the Banana team](https://www.banana.dev/contact) to set it privately as a build arg.
   - edit `download.py` (or the `Dockerfile` itself) with scripts download your custom model weights at build time
   - edit `requirements.txt` with your pip packages. Don't delete the "sanic" line, as it's a banana dependency.
 
