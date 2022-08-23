@@ -1,13 +1,13 @@
 
 # 🍌 Banana Serverless
 
-This repo gives a basic framework for serving ML models in production using simple HTTP servers.
+This repo gives a basic framework for serving Stable Diffusion in production using simple HTTP servers.
 
 If you want to generalize this to deploy anything on Banana, [see the guide here](https://www.notion.so/banana-dev/How-To-Serve-Anything-On-Banana-125a65fc4d30496ba1408de1d64d052a).
 
 ## Quickstart:
 
-The repo is already set up to run a basic [HuggingFace BERT](https://huggingface.co/docs/transformers/model_doc/bert) model.
+The repo is already set up to run [Stable Diffusion](https://huggingface.co/docs/transformers/model_doc/bert) text-to-image model.
 1. Run `pip3 install -r requirements.txt` to download dependencies.
 2. Run `python3 server.py` to start the server.
 3. Run `python3 test.py` in a different terminal session to test against it.
