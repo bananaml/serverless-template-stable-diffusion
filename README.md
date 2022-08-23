@@ -34,8 +34,8 @@ If Banana is your favorite GPU hosting provider (and we sure hope it is), read o
 
 Three steps:
 1. Create your own copy of this template repo. Either:
-- Click "[Fork](https://github.com/bananaml/serverless-template/fork)" (creates a public repo)
-- Click "[Use this Template](https://github.com/bananaml/serverless-template/generate)" (creates a private or public repo)
+- Click "Fork" on this repo (creates a public repo)
+- Click "Use this Template" on this repo (creates a private or public repo)
 - Create your own repo and copy the template files into it
 
 2. Install the [Banana Github App](https://github.com/apps/banana-serverless) to your new repo.
