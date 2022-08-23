@@ -3,16 +3,18 @@ from torch import autocast
 from diffusers import StableDiffusionPipeline, LMSDiscreteScheduler
 import base64
 from io import BytesIO
+import os
 
 # Init is ran on server startup
 # Load your model to GPU as a global variable here using the variable name "model"
 def init():
     global model
+    HF_AUTH_TOKEN = os.getenv("HF_AUTH_TOKEN")
     
     # this will substitute the default PNDM scheduler for K-LMS  
     lms = LMSDiscreteScheduler(beta_start=0.00085, beta_end=0.012, beta_schedule="scaled_linear")
 
-    model = StableDiffusionPipeline.from_pretrained("CompVis/stable-diffusion-v1-4", scheduler=lms, use_auth_token=True).to("cuda")
+    model = StableDiffusionPipeline.from_pretrained("CompVis/stable-diffusion-v1-4", scheduler=lms, use_auth_token=HF_AUTH_TOKEN).to("cuda")
 
 # Inference is ran for every server call
 # Reference your preloaded global model variable here.
