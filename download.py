@@ -20,6 +20,6 @@ def download_model():
         scheduler=lms,
         use_auth_token=HF_AUTH_TOKEN
     )
-g
+
 if __name__ == "__main__":
     download_model()
