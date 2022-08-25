@@ -5,9 +5,7 @@ This repo gives a basic framework for serving Stable Diffusion in production usi
 
 ## Quickstart:
 
-1. Create your own copy of this template repo. Either:
-- Click "Fork" on this repo (creates a public repo)
-- Create your own repo and copy the template files into it (to create a private repo)
+1. Create your own private repo and copy the files from this template repo into it. You'll want a private repo so that your huggingface keys are secure.
 
 2. Install the [Banana Github App](https://github.com/apps/banana-serverless) to your new repo.
 
