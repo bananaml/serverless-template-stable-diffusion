@@ -5,6 +5,7 @@ This repo gives a basic framework for serving Stable Diffusion in production usi
 
 ## Extra Quickstart:
 Stable Diffusion is now avaiable as an instant deploy template on Banana!
+
 Log into the App, click "New Model", and then "deploy from a template".
 
 ## Quickstart:
