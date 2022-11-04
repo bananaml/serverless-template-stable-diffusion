@@ -10,7 +10,7 @@ model_inputs = {'prompt': 'realistic field of grass'}
 
 res = requests.post('http://localhost:8000/', json = model_inputs)
 
-image_byte_string = res.json()["image_base64"]
+image_byte_string = res.json()["images_base64"]
 
 image_encoded = image_byte_string.encode('utf-8')
 image_bytes = BytesIO(base64.b64decode(image_encoded))
