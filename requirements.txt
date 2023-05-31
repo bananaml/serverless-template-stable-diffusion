@@ -1,4 +1,6 @@
 sanic==22.6.2
-diffusers==0.2.3
+diffusers
 transformers
 scipy
+websockets==10.0
+accelerate
